@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
-const copy = require('gulp-copy');
 
 gulp.task('pug', () => {
     return gulp.src(['pug/*.pug', '!pug/_*.pug'])
@@ -8,6 +7,6 @@ gulp.task('pug', () => {
         .pipe(gulp.dest('web/'));
 });
 
-gulp.task('watch', ['pug', 'chartjs'], () => {
+gulp.task('watch', ['pug'], () => {
     gulp.watch('pug/*.pug', ['pug']);
 });
