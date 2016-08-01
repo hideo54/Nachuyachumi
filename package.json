@@ -1,0 +1,26 @@
+{
+    "name": "nachuyachumi",
+    "version": "1.0.0",
+    "description": "A website about my activity in summer vacation.",
+    "main": "main.js",
+    "scripts": {
+        "watch": "gulp watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hideo54/Nachuyachumi.git"
+    },
+    "author": "hideo54",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/hideo54/Nachuyachumi/issues"
+    },
+    "homepage": "https://github.com/hideo54/Nachuyachumi#readme",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-pug": "^3.0.3"
+    },
+    "dependencies": {
+        "chart.js": "^2.2.0-rc.2"
+    }
+}
