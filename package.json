@@ -4,6 +4,7 @@
     "description": "A website about my activity in summer vacation.",
     "main": "main.js",
     "scripts": {
+        "build": "gulp pug",
         "watch": "gulp watch"
     },
     "repository": {
