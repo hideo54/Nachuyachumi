@@ -12,7 +12,7 @@ var daysChart = new Chart(document.getElementById('days'), {
                 passedDays, allDays - passedDays
             ],
             backgroundColor: [
-                '#8bc34a', 'rgba(158, 158, 158, 0.2)'
+                '#FF5722', 'rgba(158, 158, 158, 0.2)'
             ]
         }]
     },
