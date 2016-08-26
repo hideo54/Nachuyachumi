@@ -3,26 +3,30 @@ var endDate = new Date(2016, 8, 1); // 8/31 <- FUCK
 var nowDate = new Date();
 var passedDays = Math.floor((nowDate - startDate) / 86400000) + 1;
 var allDays = Math.floor((endDate - startDate) / 86400000) + 1;
-var daysChart = new Chart(document.getElementById('days'), {
-    type: 'doughnut',
-    data: {
-        labels: ['経過日数', '残り'],
-        datasets: [{
-            data: [
-                passedDays, allDays - passedDays
-            ],
-            backgroundColor: [
-                '#FF5722', 'rgba(158, 158, 158, 0.2)'
-            ]
-        }]
-    },
-    options: {
-        animation: {
-            animateRotate: false
+if (endDate - nowDate > 0) {
+    var daysChart = new Chart(document.getElementById('daysGraph'), {
+        type: 'doughnut',
+        data: {
+            labels: ['経過日数', '残り'],
+            datasets: [{
+                data: [
+                    passedDays, allDays - passedDays
+                ],
+                backgroundColor: [
+                    '#FF5722', 'rgba(158, 158, 158, 0.2)'
+                ]
+            }]
         },
-        cutoutPercentage: 60
-    }
-});
+        options: {
+            animation: {
+                animateRotate: false
+            },
+            cutoutPercentage: 60
+        }
+    });
+} else {
+    document.getElementById('days').innerHTML = '<p><b>夏休み終了〜!w</b></p>';
+};
 
 var myColor = {
     math: 'rgba(63, 81, 181, 0.5)', // #3F51B5
