@@ -1,5 +1,5 @@
 var startDate = new Date(2016, 6, 16); // 7/16 <- FUCK
-var endDate = new Date(2016, 7, 31); // 8/31 <- FUCK
+var endDate = new Date(2016, 8, 1); // 8/31 <- FUCK
 var nowDate = new Date();
 var passedDays = Math.floor((nowDate - startDate) / 86400000) + 1;
 var allDays = Math.floor((endDate - startDate) / 86400000) + 1;
