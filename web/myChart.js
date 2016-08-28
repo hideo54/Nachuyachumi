@@ -42,7 +42,7 @@ var homeworkChart = new Chart(document.getElementById('homework'), {
         datasets: [{
             label: '進捗(%)',
             data: [
-                100 * 7 / 52,
+                100 * 8 / 52,
                 100 * 0 / 48,
                 100 * 2 / 12,
                 100 * 0 / 20,
