@@ -49,7 +49,7 @@ var homeworkChart = new Chart(document.getElementById('homework'), {
                 100 * 4 / 16,
                 100 * 0 / 14,
                 100 * 0 / 4,
-                100 * 0 / 1
+                100 * 1 / 1
             ],
             backgroundColor: [
                 myColor.math, myColor.math,
