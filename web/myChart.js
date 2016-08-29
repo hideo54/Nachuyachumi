@@ -38,7 +38,7 @@ var myColor = {
 var homeworkChart = new Chart(document.getElementById('homework'), {
     type: 'horizontalBar',
     data: {
-        labels: ['チャート(数III)', '1対1(数II)', 'LINK UP', '英作文', '古典', '評論', 'レポート'],
+        labels: ['チャート(数III)', '1対1(数II)', 'LINK UP', '英作文', '古文', '漢文', '評論', 'レポート'],
         datasets: [{
             label: '進捗(%)',
             data: [
@@ -46,14 +46,15 @@ var homeworkChart = new Chart(document.getElementById('homework'), {
                 100 * 0 / 48,
                 100 * 2 / 12,
                 100 * 0 / 20,
-                100 * 4 / 30,
+                100 * 4 / 16,
+                100 * 0 / 14,
                 100 * 0 / 4,
                 100 * 0 / 1
             ],
             backgroundColor: [
                 myColor.math, myColor.math,
                 myColor.english, myColor.english,
-                myColor.japanese, myColor.japanese,
+                myColor.japanese, myColor.japanese, myColor.japanese,
                 myColor.general
             ]
         }]
