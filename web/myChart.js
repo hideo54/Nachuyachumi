@@ -44,7 +44,7 @@ var homeworkChart = new Chart(document.getElementById('homework'), {
             data: [
                 100 * 8 / 52,
                 100 * 0 / 48,
-                100 * 5 / 12,
+                100 * 8 / 12,
                 100 * 0 / 20,
                 100 * 4 / 16,
                 100 * 0 / 14,
